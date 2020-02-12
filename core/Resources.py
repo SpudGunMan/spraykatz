@@ -20,7 +20,7 @@ def initSpraykatz():
     # Ensure procdump binaries are available to be used by Spraykatz.
     procdumpPath = os.path.join(os.path.dirname(os.path.realpath(sys.argv[0])), 'misc', 'procdump')
     procdumpZip = os.path.join(procdumpPath, 'procdump.zip')
-    procdump32 = os.path.join(procdumpPath, 'procdump32.exe')
+    procdump32 = os.path.join(procdumpPath, 'procdump.exe')
     procdump64 = os.path.join(procdumpPath, 'procdump64.exe')
     if not os.path.isfile(procdump32) or not os.path.isfile(procdump64):
         choices = ['y','yes','Y','Yes','YES']
